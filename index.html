@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jalaparthi Yasmin | Premium Portfolio - Full Stack Developer & BCA Student</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional portfolio of Jalaparthi Yasmin, BCA Student & Aspiring Full Stack Developer. Discover projects in Java, Web Development, MySQL, and Cybersecurity.">
+  <meta name="keywords" content="Jalaparthi Yasmin, Full Stack Developer, BCA Student, Portfolio, Web Development, Java Developer, MySQL Database, Cybersecurity Learner, Hyderabad">
+  <meta name="author" content="Jalaparthi Yasmin">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. Interactive Particles Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- 2. Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- 3. Premium Loading Screen -->
+  <div id="loader" class="loader-wrapper">
+    <div class="loader-content">
+      <div class="loader-logo">JY</div>
+      <div class="loader-text">Jalaparthi Yasmin</div>
+      <div class="loader-bar-bg">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <div style="font-size: 0.75rem; color: #64748b; margin-top: 10px; letter-spacing: 0.5px;">Loading Developer Environment...</div>
+    </div>
+  </div>
+
+  <!-- 4. Sticky Header & Navigation -->
+  <header id="header" class="sticky-header">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#home">JY</a>
+      </div>
+      
+      <nav>
+        <ul id="nav-menu" class="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Light/Dark Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle visual theme">
+          <i class="fa-solid fa-moon dark-icon"></i>
+          <i class="fa-solid fa-sun light-icon"></i>
+        </button>
+        
+        <!-- Hamburger Menu toggles for Mobile view -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 5. Main Hero Section -->
+  <section id="home">
+    <div class="section-container hero-grid">
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-title"><span>Jalaparthi Yasmin</span></h1>
+        
+        <div class="hero-subtitle">
+          <span class="typed-text" id="typed-text"></span>
+        </div>
+        
+        <p class="hero-desc">
+          I build modern, premium Full Stack web applications and love solving real-world challenges through clean, maintainable code.
+        </p>
+        
+        <div class="hero-btns">
+          <button id="hire-me-btn" class="btn btn-primary">
+            Hire Me <i class="fa-solid fa-envelope"></i>
+          </button>
+          <a href="C:\Users\yasmi\OneDrive\Desktop\portofolio\assets\resume" download="Jalaparthi_Yasmin_Resume.pdf" class="btn btn-secondary">
+            Download Resume <i class="fa-solid fa-arrow-down-to-line"></i>
+          </a>
+           <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-outline">View Projects <i class="fas fa-project-diagram btn-icon"></i></a>
+                        <a href="#certifications" class="btn btn-outline btn-third">View Certifications <i class="fas fa-award btn-icon"></i></a>
+                </div>
+        </div>
+        
+        <div class="hero-socials">
+          <a href="https://github.com/Yasmin-web-glitch" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jalaparthi-yasmin-2a00a841a/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-img-col">
+        <div class="profile-img-container">
+          <div class="profile-glow-ring"></div>
+          <!-- Profile image SVG fallback, easily replaceable with real profile photo -->
+          <img src="assets/images/yasmin.jpeg" alt="Jalaparthi Yasmin Profile" class="profile-img" width="280" height="280">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. About Section -->
+  <section id="about" class="reveal">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Introduction</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-info">
+          <h3 class="about-intro-title">Aspiring <span>Full Stack Developer</span></h3>
+          <p class="about-objective">
+            "I am a passionate BCA student and aspiring Full Stack Developer with a strong foundation in Java, web development, MySQL, and cybersecurity. I enjoy building real-world applications, continuously learning new technologies, and creating innovative solutions that make a positive impact."
+          </p>
+          
+          <div class="languages-wrap">
+            <h4 class="languages-title"><i class="fa-solid fa-language"></i> Spoken Languages</h4>
+            <div class="languages-grid">
+              <span class="lang-chip"><span class="lang-dot"></span> English</span>
+              <span class="lang-chip"><span class="lang-dot"></span> kannada</span>
+              <span class="lang-chip"><span class="lang-dot"></span> Hindi</span>
+              <span class="lang-chip"><span class="lang-dot"></span> Telugu</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Statistics grid counters -->
+        <div class="about-stats">
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="7">0+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="13">0</span>
+            <span class="stat-label">Certificates</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="1">0</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="12">0+</span>
+            <span class="stat-label">Skills </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Skills Section -->
+  <section id="skills" class="reveal">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Technicals </span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- Frontend Development Card -->
+        <div class="glass-card skills-category">
+          <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML5 / CSS3</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript (ES6+)</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Backend & Databases Card -->
+        <div class="glass-card skills-category">
+          <h3><i class="fa-solid fa-server"></i> Backend & Database</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Java Programming</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MySQL Databases</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tools & Security Card -->
+        <div class="glass-card skills-category">
+          <h3><i class="fa-solid fa-shield-halved"></i> Cybersecurity & Tools</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Cybersecurity Principles</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Git, GitHub </span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Currently Learning Category -->
+        <div class="glass-card skills-category">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Currently Learning</h3>
+          <div class="tags-grid" style="margin-top: 15px;">
+            <div class="tag-card"><i class="fa-solid fa-arrows-spin"></i> Full Stack Development</div>
+            <div class="tag-card"><i class="fa-solid fa-network-wired"></i> Advanced Cybersecurity</div>
+            <div class="tag-card"><i class="fa-solid fa-terminal"></i>  Java, Python and AI</div>
+            <div class="tag-card"><i class="fa-solid fa-cubes"></i> Data Structures & Algorithms</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Timeline Section (Experience & Education) -->
+  <section id="experience" class="reveal">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Chronology</span>
+        <h2 class="section-title">Experience & Education</h2>
+      </div>
+      
+      <div class="timeline-section-grid">
+        <!-- Experience Timeline Column -->
+        <div class="timeline-column">
+          <h3><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+          <div class="timeline-wrapper">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-date">July 22 – August 4, 2026</span>
+              <h4 class="timeline-title">Full Stack Developer Intern</h4>
+              <h5 class="timeline-company">Rooman Technologies</h5>
+              <div class="timeline-desc">
+                <p>Worked as a Full Stack Developer, developing responsive and scalable web applications using Java, HTML, CSS, JavaScript, and MySQL. Gained hands-on experience in frontend and backend development, database management, API integration, debugging, and version control while collaborating on real-world projects in an agile development environment.
+
+                <ul>
+                  <li>Developed and maintained full-stack web applications with responsive and user-friendly interfaces.</li>
+<li>Integrated backend services with databases, performed testing and debugging, and optimized application performance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Education Timeline Column -->
+        <div id="education" class="timeline-column">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+          <div class="timeline-wrapper">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-date">2024 – 2027</span>
+              <h4 class="timeline-title">Bachelor of Computer Applications (BCA)</h4>
+              <h5 class="timeline-company">University College for Women</h5>
+              <div class="timeline-desc">
+                <p>Currently pursuing a Bachelor of Computer Applications with a strong focus on programming, software development, database management, web technologies, and computer science fundamentals. Actively building practical skills through academic projects, certifications, and hands-on learning in Java Full Stack Development.</p>
+                <ul>
+                  <li>Maintained high academic achievements with strong focus on technical excellence, problem-solving, and industry-ready software development skills..</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Projects Section -->
+  <section id="projects" class="reveal">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Portfolio</span>
+        <h2 class="section-title">My Projects</h2>
+      </div>
+
+      <div class="projects-intro">
+        <!-- Featured Project Layout -->
+        <div class="glass-card featured-project-card">
+          <div class="featured-img-wrap">
+            <span class="featured-badge">Featured System</span>
+            <img src="assets/images/project-placeholder.svg" alt="Smart Healthcare Record and Telemedicine Mockup" class="project-img">
+          </div>
+          
+          <div class="featured-content">
+            <h3 class="featured-title">Smart Healthcare Record & Telemedicine Platform</h3>
+            <p class="featured-desc">
+              An advanced, security-focused telemedicine application allowing patients to monitor health metrics, consult doctors virtually, and maintain end-to-end encrypted records.
+            </p>
+            
+            <div class="featured-features">
+              <h5>Key Modular Subsystems:</h5>
+              <div class="features-grid">
+                <div class="feature-item"><i class="fa-solid fa-check"></i> AI Symptom Checker</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Patient & Doctor Dashboards</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Admin Dashboard Control</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Electronic Health Records</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Appointment Booking</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Video Consultations</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Prescriptions Management</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Health Analytics Graph</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Medicine Reminders</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Emergency Quick-Contacts</div>
+              </div>
+            </div>
+            
+            <div class="tech-tags">
+              <span class="tech-tag">Java SE</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">Python</span>
+            </div>
+            
+            <div class="project-links">
+              <button class="btn btn-primary" onclick="alert('Starting Simulated Featured Demo...')">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+              <a href="https://github.com/Yasmin-web-glitch" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects Grid (9 systems) -->
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="glass-card project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/resume.jpeg" alt="Resume Builder" class="project-img">
+          </div>
+          <div class="project-card-body">
+            <h4 class="project-card-title">Resume Builder</h4>
+            <p class="project-card-desc">An interactive resume compiler with responsive layouts, customizable CSS skins, and direct PDF rendering capabilities.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag"> CSS </span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-secondary btn-sm" onclick="alert('Launching Live Resume Editor...')"><i class="fa-solid fa-circle-play"></i> Demo</button>
+              <a href="https://github.com/yasminyaassy" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/queue.jpeg" alt="Queue Token Booking System" class="project-img">
+          </div>
+          <div class="project-card-body">
+            <h4 class="project-card-title">Queue Token Booking System</h4>
+            <p class="project-card-desc">Digital client booking platform that manages queue distribution and prints token counts on client checkout.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Java SE</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JavaScript</span>
+               <span class="tech-tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-secondary btn-sm" onclick="alert('Launching Simulated Booking Portal...')"><i class="fa-solid fa-circle-play"></i> Demo</button>
+              <a href="https://github.com/yasminyaassy" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/bmi.jpeg" alt="BMI & Health Calculator" class="project-img">
+          </div>
+          <div class="project-card-body">
+            <h4 class="project-card-title">BMI & Health Calculator</h4>
+            <p class="project-card-desc">A micro dashboard processing weight categories, metabolic metrics, and dietary advice charts dynamically.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS Grid</span>
+              <span class="tech-tag">JS Math</span>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-secondary btn-sm" onclick="alert('Launching Fitness Calculator...')"><i class="fa-solid fa-circle-play"></i> Demo</button>
+              <a href="https://github.com/Yasmin-web-glitch/BMI-and-Health-Calculator" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/attendence.jpeg" alt="Attendance Percentage Calculator" class="project-img">
+          </div>
+          <div class="project-card-body">
+            <h4 class="project-card-title">Attendance Percentage Calculator</h4>
+            <p class="project-card-desc">A calculator to compute standard class compliance metrics and forecast count requirements to achieve 75%.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Web Storage</span>
+              <span class="tech-tag">CSS Glow</span>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-secondary btn-sm" onclick="alert('Launching Attendance Forecaster...')"><i class="fa-solid fa-circle-play"></i> Demo</button>
+              <a href="https://github.com/Yasmin-web-glitch/Attendence-Percentage-calculator" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="glass-card project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/qr.jpeg" alt="QR Code Generator" class="project-img">
+          </div>
+          <div class="project-card-body">
+            <h4 class="project-card-title">QR Code Generator</h4>
+            <p class="project-card-desc">Encodes URLs, text elements, and contact vCards into highly responsive vector patterns downloadable in PNG formats.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">JS Engine</span>
+              <span class="tech-tag">Web API</span>
+              <span class="tech-tag">SVG Export</span>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-secondary btn-sm" onclick="alert('Launching QR Vector Engine...')"><i class="fa-solid fa-circle-play"></i> Demo</button>
+              <a href="https://github.com/Yasmin-web-glitch/QR-code-Generator" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="glass-card project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/images/website.jpeg" alt="E-commerce Website" class="project-img">
+          </div>
+          <div class="project-card-body">
+            <h4 class="project-card-title">E-commerce Website</h4>
+            <p class="project-card-desc">Mock shopping portal with animated product galleries, responsive checkout lists, and persistence mechanisms.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">Flexbox</span>
+              <span class="tech-tag">LocalStorage</span>
+            </div>
+            <div class="project-links">
+              <button class="btn btn-secondary btn-sm" onclick="alert('Launching Shopping Cart Demo...')"><i class="fa-solid fa-circle-play"></i> Demo</button>
+              <a href="https://github.com/yasminyaassy" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+        </div>
+  </section>
+
+  <!-- 10. Certificates Gallery Section -->
+  <section id="certificates" class="reveal">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <!-- Provider Filtering controls -->
+      <div class="certs-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="microsoft">Microsoft (4)</button>
+        <button class="filter-btn" data-filter="ibm">IBM (2)</button>
+        <button class="filter-btn" data-filter="cisco">Cisco (1)</button>
+        <button class="filter-btn" data-filter="oracle">Oracle (1)</button>
+        <button class="filter-btn" data-filter="coursera">Deloitte(1)</button>
+        <button class="filter-btn" data-filter="great-learning">TATA</button>(1)</button>
+        <button class="filter-btn" data-filter="simplilearn">Simplilearn (1)</button>
+        <button class="filter-btn" data-filter="great-learning">Great Learning</button>(1)</button>
+        <button class="filter-btn" data-filter="simplilearn">Coursera (1)</button>
+      </div>
+
+      <!-- Certificates Grid -->
+      <div class="certs-grid">
+        
+        <!-- Microsoft 1 -->
+        <div class="glass-card cert-card" data-category="microsoft">
+          <div class="cert-img-wrap">
+            <img src="assets/images/microsft2.jpeg" alt="Microsoft Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Design Solution that align with security best practices and priorities</h4>
+            <span class="cert-issuer">Microsoft</span>
+          </div>
+        </div>
+
+        <!-- Microsoft 2 -->
+        <div class="glass-card cert-card" data-category="microsoft">
+          <div class="cert-img-wrap">
+            <img src="assets/images/microsft3.jpeg" alt="Microsoft Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Design security for Applications and data </h4>
+            <span class="cert-issuer">Microsoft</span>
+          </div>
+        </div>
+
+        <!-- Microsoft 3 -->
+        <div class="glass-card cert-card" data-category="microsoft">
+          <div class="cert-img-wrap">
+            <img src="assets/images/microsft4.jpeg" alt="Microsoft Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Understand identity architecture for AI workloads</h4>
+            <span class="cert-issuer">Microsoft</span>
+          </div>
+        </div>
+
+        <!-- Microsoft 4 -->
+        <div class="glass-card cert-card" data-category="microsoft">
+          <div class="cert-img-wrap">
+            <img src="assets/images/microsoft.jpeg" alt="Microsoft Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Design security operations, identity, and compliance capabilities </h4>
+            <span class="cert-issuer">Microsoft</span>
+          </div>
+        </div>
+
+        <!-- IBM 1 -->
+        <div class="glass-card cert-card" data-category="ibm">
+          <div class="cert-img-wrap">
+            <img src="assets/images/IBMWeb.jpeg" alt="IBM Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Web development Fundamentals</h4>
+            <span class="cert-issuer">IBM</span>
+          </div>
+        </div>
+
+        <!-- IBM 2 -->
+        <div class="glass-card cert-card" data-category="ibm">
+          <div class="cert-img-wrap">
+            <img src="assets/images/IBM cyber.jpeg" alt="IBM Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Cybersecurity Fundamentals</h4>
+            <span class="cert-issuer">IBM</span>
+          </div>
+        </div>
+
+        <!-- Cisco 1 -->
+        <div class="glass-card cert-card" data-category="cisco">
+          <div class="cert-img-wrap">
+            <img src="assets/images/cisco.jpeg" alt="Cisco Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Introduction to Cybersecurity </h4>
+            <span class="cert-issuer">Cisco</span>
+          </div>
+        </div>
+
+        <!-- Oracle 1 -->
+        <div class="glass-card cert-card" data-category="oracle">
+          <div class="cert-img-wrap">
+            <img src="assets/images/Oraclejava.jpeg" alt="Oracle Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Java foundation</h4>
+            <span class="cert-issuer">Oracle</span>
+          </div>
+        </div>
+        
+        <!--HP life 1 -->
+        <div class="glass-card cert-card" data-category="HP life">
+          <div class="cert-img-wrap">
+            <img src="assets/images/HPcyber.jpeg" alt="HP Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Introduction to Cybersecurity</h4>
+            <span class="cert-issuer">HP life</span>
+          </div>
+        </div>
+        
+        <!-- TATA 1 -->
+        <div class="glass-card cert-card" data-category="TATA">
+          <div class="cert-img-wrap">
+            <img src="assets/images/TATAcyber.jpeg" alt="TATA Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Cybersecurity Analyst Job Simulation </h4>
+            <span class="cert-issuer">TATA</span>
+          </div>
+        </div>
+
+        <!-- Coursera 1 -->
+        <div class="glass-card cert-card" data-category="coursera">
+          <div class="cert-img-wrap">
+            <img src="assets/images/coursera free website.jpeg" alt="Coursera Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Build a free website with Wordpress</h4>
+            <span class="cert-issuer">Coursera</span>
+          </div>
+        </div>
+
+        <!-- Great Learning 1 -->
+        <div class="glass-card cert-card" data-category="great-learning">
+          <div class="cert-img-wrap">
+            <img src="assets/images/greatlearning java.jpeg" alt="Great Learning Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Java Programming </h4>
+            <span class="cert-issuer">Great Learning</span>
+          </div>
+        </div>
+
+        <!-- Simplilearn 1 -->
+        <div class="glass-card cert-card" data-category="simplilearn">
+          <div class="cert-img-wrap">
+            <img src="assets/images/simplilearn full.jpeg" alt="Simplilearn Certification" class="cert-img">
+            <div class="cert-overlay">
+              <button class="btn btn-primary view-cert-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-card-body">
+            <h4 class="cert-title">Full Stack Development</h4>
+            <span class="cert-issuer">Simplilearn</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. GitHub contribution layout & Visitor counter -->
+  <section class="reveal">
+    <div class="section-container github-stats-container">
+      
+      <!-- GitHub Grid Mockup -->
+      <div class="glass-card github-grid-card">
+        <h3 class="github-grid-title"><i class="fa-brands fa-github-alt"></i> GitHub Contributions</h3>
+        
+        <div class="github-grid-mock">
+          <!-- Render 7 row arrays simulating activity -->
+          <div class="github-grid-row">
+            <span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-4"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-3"></span>
+          </div>
+          <div class="github-grid-row">
+            <span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span>
+          </div>
+          <div class="github-grid-row">
+            <span class="github-cell lvl-2"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-4"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span>
+          </div>
+          <div class="github-grid-row">
+            <span class="github-cell lvl-0"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-4"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-1"></span>
+          </div>
+          <div class="github-grid-row">
+            <span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-3"></span>
+          </div>
+          <div class="github-grid-row">
+            <span class="github-cell lvl-2"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-1"></span>
+          </div>
+          <div class="github-grid-row">
+            <span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-4"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span><span class="github-cell lvl-2"></span><span class="github-cell lvl-3"></span><span class="github-cell lvl-1"></span><span class="github-cell lvl-0"></span>
+          </div>
+        </div>
+
+        <div class="github-grid-footer">
+          <span>Learn more at github.com/repos</span>
+          <div class="github-legend">
+            <span>Less</span>
+            <span class="github-cell lvl-0"></span>
+            <span class="github-cell lvl-1"></span>
+            <span class="github-cell lvl-2"></span>
+            <span class="github-cell lvl-3"></span>
+            <span class="github-cell lvl-4"></span>
+            <span>More</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visitor Counter widget -->
+      <div class="glass-card visitor-counter-card">
+        <h3 class="visitor-title"><i class="fa-solid fa-users-viewfinder"></i> Visitor Count</h3>
+        <div class="counter-digits" id="visitor-digits">
+          <!-- Digits filled in javascript -->
+          <div class="digit-box">0</div>
+          <div class="digit-box">0</div>
+          <div class="digit-box">0</div>
+          <div class="digit-box">0</div>
+          <div class="digit-box">0</div>
+        </div>
+        <p style="font-size: 0.8rem; color: #64748b; margin-top: 15px;">Tracking total views on portfolio page</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 12. Contact Form & Feedback Section -->
+  <section id="contact" class="reveal">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Reach Out</span>
+        <h2 class="section-title">Get In <span class="text-gradient">Touch</span> </h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-info-text">
+              <h4>Email</h4>
+              <p><a href="mailto:yasminyaassy@gmail.com">yasminyaassy@gmail.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="contact-info-text">
+              <h4>LinkedIn</h4>
+              <p><a href="https://www.linkedin.com/in/jalaparthi-yasmin-2a00a841a/" target="_blank" rel="noopener noreferrer">Jalaparthi Yasmin</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="contact-info-text">
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/yasminyaassy" target="_blank" rel="noopener noreferrer">https://github.com/Yasmin-web-glitch</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="field-name">Your Name</label>
+                <input type="text" id="field-name" class="form-control" placeholder="Enter name">
+                <span class="error-msg">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label for="field-email">Email Address</label>
+                <input type="email" id="field-email" class="form-control" placeholder="Enter email">
+                <span class="error-msg">Please enter a valid email address</span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="field-subject">Subject</label>
+              <input type="text" id="field-subject" class="form-control" placeholder="Subject line">
+              <span class="error-msg">Please specify a subject</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="field-message">Message</label>
+              <textarea id="field-message" rows="5" class="form-control" placeholder="Write message details..."></textarea>
+              <span class="error-msg">Please write your message details</span>
+            </div>
+            
+            <div id="form-status" class="form-status"></div>
+            
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-socials">
+        <a href="https://github.com/Yasmin-web-glitch" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jalaparthi-yasmin-2a00a841a/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:yasminyaassy@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">Designed & Developed by <span>Jalaparthi Yasmin</span> © 2026</p>
+    </div>
+  </footer>
+
+  <!-- 14. Hire Me Modal Overlay -->
+  <div id="hire-modal" class="modal-overlay">
+    <div class="glass-card modal-container">
+      <button id="hire-modal-close" class="modal-close-btn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="hire-modal-body">
+        <img src="assets/images/profile-placeholder.svg" alt="Jalaparthi Yasmin Profile" class="hire-modal-img">
+        <h4 class="hire-modal-name">Jalaparthi Yasmin</h4>
+        <p class="hire-modal-intro">
+          I am seeking a junior Software Engineer placement or Full Stack Developer internship where I can contribute to Java developments, database architectures, and responsive web systems.
+        </p>
+        
+        <div class="hire-modal-skills">
+          <h5>Core Focus Area</h5>
+          <div class="hire-skills-tags">
+            <span class="tech-tag">Java OOP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Web Development</span>
+            <span class="tech-tag">Cybersecurity</span>
+          </div>
+        </div>
+
+        <div class="hire-modal-btns">
+          <a href="mailto:yasminyaassy@gmail.com?subject=Opportunity%20Discussion" class="btn btn-primary">Email Me <i class="fa-solid fa-paper-plane"></i></a>
+          <a href="C:\Users\yasmi\OneDrive\Desktop\portofolio\assets\resume" download="Jalaparthi_Yasmin_Resume.pdf" class="btn btn-secondary">Get Resume <i class="fa-solid fa-arrow-down-to-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 15. Lightbox Modal Overlay for Certificate preview -->
+  <div id="lightbox-modal" class="modal-overlay">
+    <div class="lightbox-container">
+      <button id="lightbox-close" class="modal-close-btn" aria-label="Close viewer"><i class="fa-solid fa-xmark"></i></button>
+      <div class="lightbox-content">
+        <img src="" alt="Certificate Preview Large" class="lightbox-img">
+        <h4 class="lightbox-title"></h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- 16. Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom Main Javascript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

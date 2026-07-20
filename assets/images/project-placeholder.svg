@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="neonCyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <filter id="neonGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#darkBg)" rx="16" />
+
+  <!-- Grid lines -->
+  <g stroke="#1e293b" stroke-width="0.5" opacity="0.3">
+    <line x1="100" y1="0" x2="100" y2="450" />
+    <line x1="200" y1="0" x2="200" y2="450" />
+    <line x1="300" y1="0" x2="300" y2="450" />
+    <line x1="400" y1="0" x2="400" y2="450" />
+    <line x1="500" y1="0" x2="500" y2="450" />
+    <line x1="600" y1="0" x2="600" y2="450" />
+    <line x1="700" y1="0" x2="700" y2="450" />
+    <line x1="0" y1="75" x2="800" y2="75" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="225" x2="800" y2="225" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="375" x2="800" y2="375" />
+  </g>
+
+  <!-- Browser Frame Wrapper -->
+  <rect x="40" y="40" width="720" height="370" fill="#0b1329" rx="10" stroke="#1e293b" stroke-width="1.5" />
+  
+  <!-- Browser Header Bar -->
+  <rect x="40" y="40" width="720" height="35" fill="#030712" rx="10" />
+  <!-- Browser Windows Controls -->
+  <circle cx="65" cy="58" r="6" fill="#ef4444" />
+  <circle cx="85" cy="58" r="6" fill="#eab308" />
+  <circle cx="105" cy="58" r="6" fill="#22c55e" />
+  <!-- Browser URL Bar -->
+  <rect x="140" y="47" width="520" height="22" rx="6" fill="#1e293b" />
+  <text x="400" y="62" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">https://yasmin-portfolio.dev/projects/demo</text>
+
+  <!-- Mockup UI Dashboard Layout -->
+  <!-- Sidebar -->
+  <rect x="60" y="95" width="140" height="295" fill="#030712" rx="6" opacity="0.6" />
+  <rect x="75" y="115" width="110" height="15" fill="#1e293b" rx="4" />
+  <rect x="75" y="145" width="110" height="12" fill="#1e293b" rx="4" />
+  <rect x="75" y="175" width="110" height="12" fill="#1e293b" rx="4" />
+  <rect x="75" y="205" width="110" height="12" fill="#1e293b" rx="4" />
+
+  <!-- Main Content Cards -->
+  <rect x="220" y="95" width="340" height="160" fill="none" stroke="url(#neonCyanBlue)" stroke-width="1.5" rx="8" opacity="0.4" />
+  <rect x="580" y="95" width="160" height="295" fill="none" stroke="#1e293b" stroke-width="1.5" rx="8" />
+  
+  <!-- Mini statistics cards in mockup -->
+  <rect x="220" y="275" width="160" height="115" fill="#030712" rx="8" stroke="#1e293b" stroke-width="1" />
+  <rect x="400" y="275" width="160" height="115" fill="#030712" rx="8" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Floating Glowing Core with Project Screenshot text -->
+  <g transform="translate(250, 130)">
+    <rect width="300" height="130" rx="12" fill="rgba(3, 7, 18, 0.85)" stroke="url(#neonCyanBlue)" stroke-width="2" filter="url(#neonGlow)" />
+    <!-- Coding Icon -->
+    <path d="M125,25 L115,55" stroke="#4facfe" stroke-width="2" stroke-linecap="round" />
+    <path d="M105,30 L95,40 L105,50" fill="none" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M135,30 L145,40 L135,50" fill="none" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <text x="150" y="80" font-family="'Outfit', 'Inter', sans-serif" font-size="14" font-weight="bold" fill="#f3f4f6" text-anchor="middle" letter-spacing="0.5">Project Screenshot Coming Soon</text>
+    <text x="150" y="102" font-family="'Outfit', 'Inter', sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Interactive Live Demo Available</text>
+  </g>
+</svg>
